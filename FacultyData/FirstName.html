@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <img id="logo" src="centre_logo.png">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src = "faculty.js"></script>
+    </head>
+    <body>
+        <p>First Names of every Employee </p>
+        <p>
+            <a href = "index.html">Back to Index</a>
+        </p>
+        <h2>
+        </h2>
+    </body>
+    <script>
+        var getFirstName = function(emp) 
+        {
+            return emp.firstName;
+        }
+        d3.select("h2")
+            .selectAll("p")
+            .data(employees)
+            .enter()
+            .append("p")
+            .text(getFirstName)
+    </script>
+</html>

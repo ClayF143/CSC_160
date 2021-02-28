@@ -1,0 +1,114 @@
+body {
+  background: url(pngguru.com.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #0B0C10;
+  background-size: cover;
+  color: #C5C6C7;
+  font-family: Verdana,sans-serif;
+}
+
+a, p, label {
+	color: #C5C6C7;
+}
+
+a:hover{
+	color:#f6b93b;
+}
+
+@keyframes slideIn {
+    0% {
+    transform: translateX(-100px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+h1 {
+	font-size: 3.5vw;	
+}
+
+label {
+  text-size: 5em;
+}
+
+img {
+    width: 125px;
+    height: 125px;
+}
+
+table {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #f6b93b;
+}
+
+th {
+    border: 3px solid #f6b93b;
+}
+
+td {
+    border: 3px solid #f6b93b;
+}
+
+.username {
+    position: absolute;
+    color: cyan;
+    top: 10px;
+    right: 10px;
+    background-color: #f6b93b;
+    border: 3px solid cyan;
+    margin: 10px;
+    font-size: 3vw;
+}
+
+.header {
+  border: 3px solid #f6b93b;
+  background-color: #0B0C10;
+}
+
+.header .nav {
+  font-size: .9em;
+  margin: 16px 10px 10px 0px;
+}
+
+.day-box {
+  margin: 20px;
+  border: 3px solid #f6b93b;
+  border-radius: 10px;
+  padding: 4px;
+  
+  position: relative;
+  opacity: 0;
+  animation: slideIn 1s forwards;
+  animation-delay: 1s;
+}
+
+.header a {
+    background-color: #f6b93b;
+    color: white;
+    padding: 10px;
+    outline-color: #f6b93b;
+    border-radius: 8px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+	
+    font-size: 1vw;
+	
+}
+
+.header a:hover {
+    background-color: #0B0C10;
+}
+
+
+.day {
+    font-size: 2vw;
+    font-weight: 500;
+    color: cyan;
+    margin-bottom: 15px;
+}

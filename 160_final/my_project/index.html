@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Macondo+Swash+Caps|Macondo" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cormorant:300,400" rel="stylesheet">
+		
+		<style>
+			html { 
+				font-size: 75%; 
+			} 
+            
+            header {
+                text-align: center;
+                font-family: cursive;
+                font-size: 3rem;
+            }
+
+			body {
+				font-family: 'Lucida Grande', serif;
+				font-size: 1.2rem;
+				fill: #b9b9b9;
+			}
+
+			#chart {
+				text-align: center;
+			}
+
+			.string-wrapper {
+				isolation: isolate;
+			}
+
+			.string {
+				 mix-blend-mode: multiply; 
+			}
+						
+			.inner-label {
+				font-family: 'Lucida Grande', cursive;
+				font-size: 1.2rem;
+				fill: #232323;
+				text-anchor: middle;
+			}
+
+			.outer-label {
+				font-family: 'Lucida Grande', cursive;
+				font-size: 1.6rem;
+				fill: #5f5f5f;
+				cursor: default;
+			}
+
+			.outer-label-value {
+				font-size: 1.2rem;
+				fill: #b9b9b9;
+			}
+		</style>
+		
+		<script src="https://d3js.org/d3.v4.js"></script>
+		<script src="../build/d3-loom.js"></script>
+	</head>
+	<body>
+        <header id = "header">
+            Relationships between physical activity, gender, screen-time, and obesity
+        </header>
+		<div id="chart"></div>
+        <script src="loom.js"></script>
+		
+	</body>
+</html>

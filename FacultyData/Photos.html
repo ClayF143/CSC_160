@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <img id="logo" src="centre_logo.png">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src = "faculty.js"></script>
+        Centre Faculty Photos
+    </head>
+    <body>
+        <p>Mugshots: </p>
+        <p>
+            <a href = "index.html">Back to Index</a>
+        </p>
+    </body>
+    <script>
+        var getPhoto = function(emp) 
+        {
+            return emp.photo;
+        }
+        d3.select("body")
+            .selectAll("img")
+            .data(employees)
+            .enter()
+            .append("img")
+            .attr("src", getPhoto)
+    </script>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="planets.js"></script>
+    <script src="classData.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+
+    <script>
+        //print results to screen as well as the console
+        var report = function(parent, answer) {
+
+            if (!Array.isArray(answer)) {
+                answer = [answer];
+            }
+            d3.select(parent)
+                .selectAll("p")
+                .data(answer)
+                .enter()
+                .append("p")
+                .text(function(ans) {
+                    return ans.toString()
+                });
+            console.log("parent" + parent, answer);
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Mapping the Planets</h1>
+
+    <div id="P1">
+        <h3>Print all of the planet objects--look in console</h3>
+        <script>
+            var answer = planets; //already done!
+            report("#P1", answer)
+            //will need to look at the console to confirm for array objects.
+        </script>
+    </div>
+
+
+    <div id="P2">
+        <h3>Print the first planet object</h3>
+        <script>
+            var answer = planets[0];
+            report("#P2", answer)
+            //will need to look at the console to confirm for array objects.
+        </script>
+    </div>
+
+
+
+    <div id="P3">
+        <h3>Create an array of planet's names</h3>
+        <script>
+            var answer = planets.map(function(planet) {return planet.name;});
+            report("#P3", answer)
+        </script>
+    </div>
+
+    <h2>Probably a good time to switch drivers</h2>
+
+
+    <div id="P4">
+        <h3>Create an array of planet's distance from sun</h3>
+        <script>
+            var answer = planets.map(function(planet) {return planet.distance;});
+            report("#P4", answer)
+        </script>
+    </div>
+
+    <div id="P5">
+        <h3>Create an array of planet's number of moons</h3>
+        <script>
+            var answer = planets.map(function(planet) {return planet.moons;});
+            report("#P5", answer)
+        </script>
+    </div>
+
+
+    <div id="P6">
+        <h3>Create an array of planet's density</h3>
+        <script>
+            var answer = planets.map(function(planet) {return planet.density;});
+            report("#P6", answer)
+        </script>
+    </div>
+
+
+    <div id="P7">
+        <h3>Report the mean number of planet Moons</h3>
+        <script>
+            var answer = d3.mean(planets.map(function(planet) {return planet.moons;}));
+            report("#P7", answer)
+        </script>
+    </div>
+
+
+    <h1>Transforming Students</h1>
+
+    <div id="S1">
+        <h3>Print all of the student objects--look in console</h3>
+        <script>
+            var answer = classroom; //already done!
+            report("#S1", answer)
+            //will need to look at the console to confirm for array objects.
+        </script>
+    </div>
+
+
+    <div id="S2">
+        <h3>Create an array with the names of the student images</h3>
+        <script>
+            var answer = classroom.map(function(student) {return student.picture;});
+            report("#S2", answer)
+        </script>
+    </div>
+
+
+
+
+    <h2>Probably a good time to switch drivers</h2>
+
+    <div id="S3">
+        <h3>Print the grade the first student made on the final</h3>
+        <script>
+            var answer = classroom[0].final[0].grade;
+            report("#S3", answer)
+        </script>
+    </div>
+
+
+
+    <div id="S4">
+        <h3>Create an array of all the student grades on the final</h3>
+        <script>
+            var answer = classroom.map(function(student) {return student.final[0].grade;});
+            report("#S4", answer)
+        </script>
+    </div>
+
+
+    <h1>Finding the means</h1>
+    <p>These questions will require that you build a more complex solution based on solutions you have already crafted. If you have defined a variable
+        in a previous answer, you may (and should) use it to answer the next question.
+    </p>
+
+    <div id="A1">
+        <h3>Create a function to get the grade from a quiz object
+        </h3>
+        <script>
+            var getGrade = function(quiz) {
+                return quiz.grade;
+            }
+
+            var answer = getGrade;
+            report("#A1", answer) //already done!
+        </script>
+    </div>
+
+    <div id="A2a">
+        <h3>Report the array of all quiz grades for the first penguin.</h3>
+        <script>
+            var answer = classroom[0].quizes.map(function(quiz) {return quiz.grade;});
+            report("#A2a", answer)
+        </script>
+    </div>
+
+
+
+    <div id="A2">
+        <h3>Find the mean of the quiz grades for the first penguin.</h3>
+        <script>
+            var answer = d3.mean(answer);
+            report("#A2", answer)
+        </script>
+    </div>
+
+    <div id="A3">
+        <h3>Create a function to find the mean of the quiz grades for a given penguin.</h3>
+        <script>
+            var quizGrades = function(quizes) {return quizes.map(function(quiz) {return quiz.grade})}
+            var allQuizes = function(penguin) {return d3.mean(quizGrades(penguin.quizes))};
+            var answer = allQuizes;
+            report("#A3", answer)
+        </script>
+    </div>
+
+    <div id="A4">
+        <h3>Create an array of the mean quiz score of each penguins. Use one line of "code"</h3>
+        <script>
+            var answer = classroom.map(allQuizes);
+            report("#A4", answer)
+        </script>
+    </div>
+
+    <div id="A5">
+        <h3>Find the mean of all the quiz scores of the class. (one number)</h3>
+        <script>
+            var answer = d3.mean(answer);
+            report("#A5", answer)
+        </script>
+    </div>
+
+
+
+    <h1>Extra Work</h1>
+
+    <p>For those wishing to do something more complex give this a shot, it should take a lot of fiddling to get each of these.</p>
+
+
+    <h1>Working with Objects</h1>
+
+    <div id="A6">
+        <h3>Create a function that takes a penguin object and returns an object that contains one attribute, the picture of that penguin</h3>
+        <script>
+            var answer = function(penguin) {return {picture: penguin.picture};}
+            report("#A6", answer)
+        </script>
+    </div>
+
+    <div id="A7">
+        <h3>Expand your function from the last one, so that the object it returns not only has a picture attribute, but also new attribute called quizMean, which is the mean of that penguin's quiz scores</h3>
+        <script>
+            //be sure to test your function out.
+            var answer = function(penguin) {return {picture: penguin.picture, quizMean: allQuizes(penguin)};}
+            report("#A7", answer(classroom[0]))
+        </script>
+    </div>
+
+    <div id="A8">
+        <h3>With one line of code, return an array of objects that contain the picture and meanQuiz grade of all penguins</h3>
+        <script>
+            var answer = classroom.map(function(penguin) {return {picture: penguin.picture, meanQuiz: allQuizes(penguin)}});
+            report("#A8", answer)
+        </script>
+    </div>
+
+    <div id="A9">
+        <h3>Create a new function that takes a penguin and extracts/generates the following info about a penguin in an object</h3>
+        <ul>
+            <li>picture</li>
+            <li>meanQuiz</li>
+            <li>meanTests</li>
+            <li>meanHW</li>
+            <li>finalGrade</li>
+        </ul>
+        <script>
+            var testGrades = function(tests) {return tests.map(function(test) {return test.grade})}
+            var allTests = function(penguin) {return d3.mean(testGrades(penguin.test))};
+            
+            var hwGrades = function(hws) {return hws.map(function(hw) {return hw.grade})}
+            var allHW = function(penguin) {return d3.mean(hwGrades(penguin.homework))};
+            
+            var penguinSummary = function(penguin) {return {picture: penguin.picture, meanQuiz: allQuizes(penguin), meanTests: allTests(penguin), meanHW: allHW(penguin), finalGrade: penguin.final[0].grade}};
+            var answer = penguinSummary;
+            report("#A9", answer)
+        </script>
+    </div>
+
+    <div id="A10">
+        <h3>With one line of code, return an array of objects where each objects contains all of the summary info about each penguin.</h3>
+        <script>
+            console.log("sum", penguinSummary(classroom[0]))
+            var answer = classroom.map(penguinSummary)
+            report("#A10", answer)
+        </script>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body></html>

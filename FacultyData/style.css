@@ -1,0 +1,38 @@
+#logo{
+    float: right;
+    width: 150px;
+    height: 150px;
+        
+    
+}
+
+body img{
+    width: 100px;
+    height: 100px;
+    outline-color: black;
+        
+}
+body h2 p:hover{
+    content: url("john.jpg");
+        width: 100px;
+        height: 100px;
+    &:right{
+        content: "BOO!";
+    }
+}
+
+
+
+.list li:hover{
+    content: url("john.jpg");
+        width: 100px;
+        height: 100px;
+}
+
+body img:hover{
+    content: url("john.jpg")
+}
+
+html{
+    background-color: pink
+}

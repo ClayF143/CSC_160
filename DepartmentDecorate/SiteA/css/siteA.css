@@ -1,0 +1,62 @@
+
+#Landing
+{
+    background-color: aquamarine;
+}
+#StudioArt
+{
+    background-color:antiquewhite;
+}
+#Economics
+{
+    background-color:beige;
+}
+#Politics
+{
+    background-color:burlywood;
+}
+#ComputerScience
+{
+    background-color:cyan;
+}
+#Mathematics
+{
+    background-color:coral;
+}
+img
+{
+   width: 100;
+    height: 100;
+}
+body
+{
+    background-image: url(../pics/other/rollKerns.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    
+}
+h1
+{
+    font-family:cursive;
+    color:darkslategrey;
+}
+body
+{
+    font-size: 18
+}
+ul li
+{
+    font-family: fantasy;
+    line-height: 3
+}
+table, th, td
+{
+    border: 1px solid black;
+    background-color: white;
+    
+}
+table td
+{
+    text-align-last: center
+}
+

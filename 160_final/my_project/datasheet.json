@@ -1,0 +1,182 @@
+[
+  {
+    "cat_1": "male",
+    "cat_2": ">60 min PA weekend",
+    "quantity": 84
+  },
+  {
+    "cat_1": "male",
+    "cat_2": "<60 min PA weekend",
+    "quantity": 44
+  },
+  {
+    "cat_1": "male",
+    "cat_2": ">30 min PA afterschool",
+    "quantity": 91
+  },
+  {
+    "cat_1": "male",
+    "cat_2": "<30 min PA afterschool",
+    "quantity": 37
+  },
+  {
+    "cat_1": "male",
+    "cat_2": "walk to school",
+    "quantity": 63
+  },
+  {
+    "cat_1": "male",
+    "cat_2": "bike to school",
+    "quantity": 38
+  },
+  {
+    "cat_1": "female",
+    "cat_2": ">60 min PA weekend",
+    "quantity": 87
+  },
+  {
+    "cat_1": "female",
+    "cat_2": "<60 min PA weekend",
+    "quantity": 93
+  },
+  {
+    "cat_1": "female",
+    "cat_2": ">30 min PA afterschool",
+    "quantity": 120
+  },
+  {
+    "cat_1": "female",
+    "cat_2": "<30 min PA afterschool",
+    "quantity": 56
+  },
+  {
+    "cat_1": "female",
+    "cat_2": "walk to school",
+    "quantity": 91
+  },
+  {
+    "cat_1": "female",
+    "cat_2": "bike to school",
+    "quantity": 42
+  }, 
+  {
+    "cat_1": "obese",
+    "cat_2": ">60 min PA weekend",
+    "quantity": 64
+  },
+  {
+    "cat_1": "obese",
+    "cat_2": "<60 min PA weekend",
+    "quantity": 54
+  },
+  {
+    "cat_1": "obese",
+    "cat_2": ">30 min PA afterschool",
+    "quantity": 64
+  },
+  {
+    "cat_1": "obese",
+    "cat_2": "<30 min PA afterschool",
+    "quantity": 79
+  },
+  {
+    "cat_1": "obese",
+    "cat_2": "walk to school",
+    "quantity": 68
+  },
+  {
+    "cat_1": "obese",
+    "cat_2": "bike to school",
+    "quantity": 32
+  },
+  {
+    "cat_1": "Normal Weight",
+    "cat_2": ">60 min PA weekend",
+    "quantity": 105
+  },
+  {
+    "cat_1": "Normal Weight",
+    "cat_2": "<60 min PA weekend",
+    "quantity": 83
+  },
+  {
+    "cat_1": "Normal Weight",
+    "cat_2": ">30 min PA afterschool",
+    "quantity": 130
+  },
+  {
+    "cat_1": "Normal Weight",
+    "cat_2": "<30 min PA afterschool",
+    "quantity":55
+  },
+  {
+    "cat_1": "Normal Weight",
+    "cat_2": "walk to school",
+    "quantity": 86
+  },
+  {
+    "cat_1": "Normal Weight",
+    "cat_2": "bike to school",
+    "quantity": 47
+  },
+  {
+    "cat_1": ">2 hrs screen time",
+    "cat_2": ">60 min PA weekend",
+    "quantity": 65
+  },
+  {
+    "cat_1": ">2 hrs screen time",
+    "cat_2": "<60 min PA weekend",
+    "quantity": 43
+  },
+  {
+    "cat_1": ">2 hrs screen time",
+    "cat_2": ">30 min PA afterschool",
+    "quantity": 72
+  },
+  {
+    "cat_1": ">2 hrs screen time",
+    "cat_2": "<30 min PA afterschool",
+    "quantity": 39
+  },
+  {
+    "cat_1": ">2 hrs screen time",
+    "cat_2": "walk to school",
+    "quantity":59
+  },
+  {
+    "cat_1": ">2 hrs screen time",
+    "cat_2": "bike to school",
+    "quantity": 27
+  },
+  {
+    "cat_1": "<2 hrs screen time",
+    "cat_2": ">60 min PA weekend",
+    "quantity": 105
+  },
+  {
+    "cat_1": "<2 hrs screen time",
+    "cat_2": "<60 min PA weekend",
+    "quantity": 90
+  },
+  {
+    "cat_1": "<2 hrs screen time",
+    "cat_2": ">30 min PA afterschool",
+    "quantity": 138
+  },
+  {
+    "cat_1": "<2 hrs screen time",
+    "cat_2": "<30 min PA afterschool",
+    "quantity": 53
+  },
+  {
+    "cat_1": "<2 hrs screen time",
+    "cat_2": "walk to school",
+    "quantity": 95
+  },
+  {
+    "cat_1": "<2 hrs screen time",
+    "cat_2": "bike to school",
+    "quantity": 52
+  }
+]

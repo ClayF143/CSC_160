@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <img id="logo" src="centre_logo.png">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src = "faculty.js"></script>
+        
+    </head>
+    <body>
+        <p>Ordered List of Employee Last Names </p>
+        <p>
+            <a href = "index.html">Back to Index</a>
+        </p>
+        <ol class="list">
+        
+        </ol>
+    </body>
+    <script>
+        var getLastName = function(emp) 
+        {
+            return emp.lastName;
+        }
+        d3.select("ol")
+            .selectAll("li")
+            .data(employees)
+            .enter()
+            .append("li")
+            .text(getLastName)
+    </script>
+</html>
